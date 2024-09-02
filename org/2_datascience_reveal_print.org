@@ -9,9 +9,8 @@
 :END:
 #+STARTUP: hideblocks overview indent inlineimages
 #+OPTIONS: toc:nil num:nil ^:nil fig:nil
-#+ATTR_HTML: :width 500px
 * You today
-#+attr_html: :width 400px: 
+#+attr_html: :width 200px: 
 [[../img/2_pythagoras.jpg]]
 
 Pythagoras of Samos (ca. 570-495 BC)
@@ -22,8 +21,6 @@ Pythagoras of Samos (ca. 570-495 BC)
 #+end_notes
 
 * WHAT WILL YOU LEARN?
-#+ATTR_HTML: :width 400px
-[[../img/objectives.jpg]]
 
 - How and why data science is so *popular*
 - What *skills* you need to do data science
@@ -31,7 +28,7 @@ Pythagoras of Samos (ca. 570-495 BC)
 - What data scientists *do* all the time
 
 * TOP DATA SCIENCE SKILLS
-#+attr_html: :width 500px:
+#+attr_html: :width 200px:
 [[../img/topSkills2024.png]]
 
 1) Data analysis (Python, R)
@@ -39,7 +36,7 @@ Pythagoras of Samos (ca. 570-495 BC)
 3) Database management (SQL)
 
 * WHAT IS IT?
-#+ATTR_HTML: :width 400px
+#+ATTR_HTML: :width 200px
 [[../img/2_venn.png]]
 
 - Vast, new, hard to define, interdisciplinary
@@ -94,9 +91,6 @@ Pythagoras of Samos (ca. 570-495 BC)
   #+end_notes
 
 ** How popular is data science?
-#+ATTR_HTML: :width 300px
-[[../img/2_selfie.jpg]]
-
 How would you try to find out how popular data science is?
 
 #+begin_notes
@@ -104,8 +98,6 @@ Image: Selfie by Cristina Zaragoza (Unsplash)
 #+end_notes
 
 ** Exploring popularity
-#+ATTR_HTML: :width 400px
-[[../img/2_4th_july.gif]]
 
 - *Search* (how? where?)
 - Find relevant *models* (how?)
@@ -133,7 +125,7 @@ Image: Selfie by Cristina Zaragoza (Unsplash)
    - How do you validate?
 
 Example: social networking analysis - Predicting Tie Strength
-(2009). [[https://sing.stanford.edu/cs303-sp11/papers/gilbert_tie_strength.pdf][Paper (PDF)]]
+(2009). Paper: https://1drv.ms/b/s!AhEvK3qWokrvqz6uRFcluk1LEOW5
 
 This paper uses a model to distinguish between weak and strong ties
 (with over 85% accuracy) based on a parametrization (= features to
@@ -147,7 +139,7 @@ Image: Google doodle 4th July 2022
 #+end_notes
 
 ** "The sexiest job"
-#+attr_html: :width 700px
+#+attr_html: :width 300px
 [[../img/sexy.png]]
 
 *What do you think has changed since 2012?* *What has changed since 2022?*
@@ -194,9 +186,6 @@ term on the map.
 #+end_notes
 
 ** The definition of sexy (for scientists)
-#+attr_html: :width 400px
-[[../img/2_feybongo.jpg]]
-
 »The best data scientists are product and process innovators and
 sometimes, developers of new data-discovery tools.  That is the
 definition of sexy.« -Gil Press ([[https://www.forbes.com/sites/gilpress/2012/09/27/data-scientists-the-definition-of-sexy/][Forbes, 09/27/12]])
@@ -216,7 +205,7 @@ Image: Richard Feynman with drums (ca 1964)
 5. Machine learning?
 
 ** Most searched   
-#+attr_html: :width 800px
+#+attr_html: :width 400px
 [[../img/2_ds_trends2.png]]
 
 *How do you like the visualization?*
@@ -231,7 +220,7 @@ Image Google Trends, August 2024
 #+end_notes
 
 ** Three years ago...
-#+attr_html: :width 600px
+#+attr_html: :width 400px
 [[../img/2_ds_trends1.png]]
 
 - "Software engineering" way down
@@ -247,7 +236,7 @@ constant.
 #+end_notes
 
 * WHICH SKILLS DO YOU NEED?
-#+attr_html: :width 600px
+#+attr_html: :width 200px
 [[../img/2_ds_skills.jpg]]
 
 Give some examples for any of these skills!
@@ -332,7 +321,7 @@ URL: [[https://tinyurl.com/data-science-skills][tinyurl.com/data-science-skills]
 #+end_notes
 
 ** What are technical data science skills?
-#+attr_html: :width 700px
+#+attr_html: :width 400px
 [[../img/2_ds_tech_skills.png]]
 
 *Have you heard of any of these?*
@@ -358,7 +347,7 @@ All of these are also potential project topics!
 #+end_notes
 
 ** -----
-#+ATTR_html: :width 400px
+#+ATTR_html: :width 300px
 [[../img/2_datasciencefrankenstein.png]]
 
 Source: [[https://st12.ning.com/topology/rest/1.0/file/get/2808339698?profile=RESIZE_1024x1024][datasciencecentral.com]]
@@ -405,8 +394,6 @@ connotations.
 #+end_notes
 
 ** A brain for numbers
-#+attr_html: :width 600px
-[[../img/2_bookshelf.jpg]]
 
 - What if you don't have a "brain for numbers"?
 - What if graphs scare you because of the underlying math?
@@ -414,8 +401,6 @@ connotations.
 - What if you actually hate computers and machines?
 
 ** Metaphors
-#+attr_html: :width 200px
-[[../img/2_frankenstein.jpg]]
 
 - What are the connotations of "Frankenstein's Data Scientist"?
 - Do you find this metaphor apt or not?
@@ -430,7 +415,7 @@ science). Metaphors are a type of model.
 #+end_notes
 
 * WHAT'S THE DEMAND?
-#+attr_html: :width 700px
+#+attr_html: :width 300px
 [[../img/2_ds_demand2.png]]
 
 Search a job portal for "data scientist" jobs. Find anything?
@@ -459,7 +444,7 @@ Source: 365datascience.com/career-advice/data-scientist-job-market/
 #+end_notes
 
 ** Job profiles (according to datacamp)
-#+attr_html: :width 600px
+#+attr_html: :width 200px
 [[../img/2_ds_jobs.png]]
 
 - Who would you rather be?
@@ -486,7 +471,7 @@ category but I have not checked that.
 #+end_notes
 
 ** Data science problems
-#+attr_html: :width 700px
+#+attr_html: :width 300px
 [[../img/2_data_science_adventure.png]]
 
 - *Stats*: few important decisions, high uncertainty 
@@ -532,7 +517,7 @@ as shown in the figure - why (or why not)?
 
 ** Data science applications
 #+NAME: fig:app
-#+attr_html: :width 800px
+#+attr_html: :width 300px
 [[../img/2_ds_applications.jpg]]
 
 #+begin_notes
@@ -540,7 +525,7 @@ Source: [[https://data-flair.training/blogs/data-science-applications/][data-fla
 #+end_notes
 
 ** Example 1: cybersecurity
-#+attr_html: :width 400px
+#+attr_html: :width 200px
 [[../img/2_ics.png]]
 
 - Problem: how to secure critical digital infrastructure
@@ -552,7 +537,7 @@ Source: [[https://hackerman.info/][Industrial Cybersecurity (2017)]]
 #+end_notes
 
 ** Example 2: time series analysis & text mining
-#+attr_html: :width 800px
+#+attr_html: :width 200px
 [[../img/2_syslog.png]]
 
 - Data: Linux /var/log/syslog event log
@@ -586,7 +571,7 @@ is "process mining". I'll be talking about that in data visualization.
 #+end_notes
 
 * WHAT IS THE DATA SCIENCE PROCESS?
-#+attr_html: :width 500px
+#+attr_html: :width 200px
 [[../img/2_righteda.png]]
 
 #+begin_notes
@@ -594,7 +579,7 @@ Source: [[https://github.com/birkenkrahe/dsc101/blob/main/wiki/talk_presentation
 #+end_notes
 
 ** Exploratory data analysis (eda) process model
-#+attr_html: :width 750px
+#+attr_html: :width 200px
 [[../img/2_ria_process1.png]]
 
 Here is my [[https://h5p.org/node/910614][interactive BPMN version]].
@@ -618,7 +603,7 @@ graphical - it could also be making a table, or creating a metaphor.
 #+end_notes
 
 ** Data science workflow
-#+attr_html: :width 750px
+#+attr_html: :width 200px
 [[../img/2_ds_workflow.png]]
 
 #+begin_notes
@@ -626,7 +611,7 @@ Source: [[https://learn.datacamp.com/courses/data-science-for-everyone][Understa
 #+end_notes
 
 ** A model for learning data science 
-#+attr_html: :width 700px
+#+attr_html: :width 200px
 [[../img/2_data_science.png]]
 
 - Algorithmic vs heuristic

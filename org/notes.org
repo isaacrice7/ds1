@@ -15,7 +15,7 @@ What did we achieve: Just a little overview and exposure to Linux and
 Emacs using the Google Cloud Shell platform (while waiting for Lyon's
 Linux server). See also: review questions in week 2.
 
-* Week 2 - Infrastructure & Introduction to Data Science
+* Week 2 - Infrastructure Injection
 #+attr_html: :width 600px:
 [[../img/penguins.jpg]]
 
@@ -38,10 +38,10 @@ Linux server). See also: review questions in week 2.
 
 - *Getting started with infrastructure*:
   1. [X] Linux exercise (to be finished)
-  2. [ ] Emacs tutorial
+  2. [X] Emacs tutorial
   3. [ ] Datalab demo
 
-* DONE Review questions (Week 1):
+** Review questions (Week 1):
 
 1. What are my views on using generative AI when learning how to code?
    #+begin_quote
@@ -107,7 +107,7 @@ Linux server). See also: review questions in week 2.
     - You can use [[https://datacamp.com/datalab][DataLab]] as an interactive notebook (similar to Emacs)
     #+end_quote
 
-* DONE Finish Google Cloud Shell exercise ([[https://github.com/birkenkrahe/ds1/blob/main/org/1_infrastructure_Google_Cloud_Shell.org][GitHub]])
+** Finish Google Cloud Shell exercise ([[https://github.com/birkenkrahe/ds1/blob/main/org/1_infrastructure_Google_Cloud_Shell.org][GitHub]])
 
 Head over to =shell.cloud.google.com=. You should get to the terminal
 right away. Move the editor out of the way, then continue the
@@ -123,14 +123,14 @@ exercise to the end:
 8. Close Emacs
 9. Watch your quota (50 hours/week)
 
-* NEXT Review questions: GitHub Hello World Project
+** Review questions: GitHub Hello World Project
 
 1. What is the purpose of Git, and who created it?
    #+begin_quote
    Controlling the main ("productive") version of a software in the
    presence of potentially many collaborators who work on that
    software at the same time. Git's creator is Linus Torvalds, who
-   also wrote the (first) Linux kernel.
+   also wrote the (first) Linux kernel (on top of GNU).
    #+end_quote
 
 2. What does it mean that a repo is =public= or =private=, and who can
@@ -161,8 +161,56 @@ exercise to the end:
    - You can fork it to your own organization (make a copy in GitHub).
    - You can clone it (create a remote copy on your PC).
    #+end_quote
+
+** Review questions: Understanding data science
+
+1. What role would be expected to build a sales data dashboard in a company?
+   #+begin_quote
+   Data analyst.
+   #+end_quote
+2. What role would be expected to build a predictive model based on
+   customer data?
+   #+begin_quote
+   Data scientist.
+   #+end_quote
+3. What role would be expected to collect and prepare data from the
+   factory floor for analysis?
+   #+begin_quote
+   Data engineer.
+   #+end_quote
+4. You've collected sales and weather data for a restaurant. What kind
+   of predictions might be possible using machine learning?
+   #+begin_quote
+   1. *Sales forecasting* based on historical sales data, weather
+      patterns and factors like holidays. Helps with inventory
+      management, staffing, planning promotions.
+   2. *Customer numbers expected* on a given day or time based on
+      weather conditions, time of day, day of the week. Optimize
+      staffing levels, improve customer service.
+   3. *Demand prediction* for specific menu items dependent on weather
+      or time of year or day. Optimize inventory management and menu
+      planning.
+   4. *Promotion effectiveness*: predict how different weather
+      conditions might affect the success of promotions or discounts.
+   5. *Seasonal trend analysis*: analyse and predict seasonal trends in
+      sales (e.g. during summer months or special events).
+   6. *Customer satisfaction* prediction (like ratings) based on past
+      trends during similar conditions.
+   7. *Impact of external events*: predict how local festivals, sporting
+      events in conjunction with weather conditions affect business.
+   8. *Dynamic pricing models*: implement dynamic pricing based on
+      historical events (summer/winter prices, festival prices etc.)
+   9. *Predicting supply chain disruptions*: correlate adverse weather
+      and other external events to predict potential supply issues.
+   10. *Operational efficiency prediction*: Predict restaurant's utility
+       usage (electricity, heating, cooling) based on weather data and
+       customer numbers.
+   #+end_quote
+5. How does the data science pipeline or workflow look like?
+   #+attr_html: :width 600px:
+   [[../img/2_ds_workflow.png]]
    
-* Start Birkenkrahe's Emacs Tutorial ([[https://github.com/birkenkrahe/ds1/blob/main/org/1_infrastructure_Emacs.org][GitHub]])
+** Start: Birkenkrahe's Emacs Tutorial ([[https://github.com/birkenkrahe/ds1/blob/main/org/1_infrastructure_Emacs.org][GitHub]]) 
 
 1. You'll get a handout. Online: [[https://tinyurl.com/emacs-tutor][tinyurl.com/emacs-tutor]].
 2. Code along with me using Emacs in the cloud.
@@ -171,12 +219,238 @@ exercise to the end:
 Note: You need to install Google Cloud Shell as an app in order to
 have all keybindings in Emacs (esp. =C-v= and =C-n=).
 
-* Datalab demo (GitHub)
+* Week 3 - DataLab & Data Collection and Storage
+#+attr_html: :width 400px:
+[[../img/2_pythagoras.jpg]]
+
+Plan:
+- [X] *Next DataCamp lesson (and Quiz 1) due August 30*
+- [X] Datalab demo in DataCamp (interactive) - 15 min
+- [ ] We have the Linux server! You've all got accounts.
+- [ ] Introduction to data science (lecture) - 30 min
+- [ ] Introduction to R (lecture/practice) - 60 min
+
+** Datalab demo (GitHub)
 
 DataCamp's DataLab and Google's Colab or RStudio are alternatives to
 Emacs + Org-mode that you want to know about (and also so that you can
 appreciate what our infrastructure brings to the table).
 
-You'll get a handout of the exercise (PDF).
+You'll get a handout of the exercise (PDF), and [[https://www.datacamp.com/datalab/w/64260e9e-2c3c-4e6b-be4b-2dc6bac45d93/edit][here is my notebook]].
+
+** Linux server has arrived
+
+- You should have received your VM server address and password
+
+- Start "Remote Desktop Protocol" on your (Windows) PC
+
+- Enter the server name (e.g. =cslinux01.lyon.edu=) => =Connect=
+
+- Login the =Xorg= session with username = =firstname.lastname= and pw
+
+- Do not shut down or log out of the VM but only close the window
+
+- Download config file with =wget -O .emacs https://tinyurl.com/lyon-emacs=
+
+- Start Emacs and install ESS package with =list-packages= followed by =i=
+  and =x= with the cursor on the line of the =ess= package
+
+- To test, create a sample R file =testR.org= with a code block (create
+  with =<s <TAB>=) and run it (with =C-c C-c=):
+  #+begin_example
+  #+property: header-args:R :session *R* :results output
+  * Sample file
+    #+begin_src R
+      str(mtcars)
+    #+end_src
+  #+end_example
+
+** Review questions (DataLab & Linux)
+
+1. Which languages does dataLab support?
+   #+begin_quote
+   R, Python, SQL
+   #+end_quote
+
+2. How many languages are supported in a single Jupyter notebook?
+   #+begin_quote
+   One high level language (R or Python), and SQL to connect to
+   relational databases.
+   #+end_quote
+
+3. How can you change the notebook language?
+   #+begin_quote
+   You must changed the runtime =Environment=.
+   #+end_quote
+
+4. Which shell are you using when you work in dataLab?
+   #+begin_quote
+   The IPython ("Interactive Python") shell, made popular by the
+   Jupyter notebook application (see also "Jupyter Lab")
+   #+end_quote
+
+5. What's the difference between dataLab, Google Colab, RStudio, and
+   Emacs Org-mode?
+   #+begin_quote
+   - Emacs, RStudio, DataLab give you terminal access
+   - Colab, RStudio, Datalab all work with IPython (.ipynb)
+   - Emacs Org-mode provides portable plain-text files
+   #+end_quote
+
+6. What are these: Emacs, Org-mode, Linux, R?
+   #+begin_quote
+   1) Emacs: an editor
+   2) Org-mode: a file mode (.org) to write and run source code files
+   3) Linux: an operating system (running on a virtual machine)
+   4) R: a statistical programming language
+   #+end_quote
+
+7. Which software do you need to run R inside Emacs (as in =testR.org=)?
+   #+begin_quote
+   1. Emacs installed (with =sudo apt install emacs=)
+   2. R installed (with =sudo apt install r-base=)
+   3. ESS package installed in Emacs (with =M-x list-packages=)
+   4. =.emacs= file downloaded (with =wget= from tinyurl.com/lyon-emacs)
+   #+end_quote
+
+8. How can you configure an =.org= file so that all code blocks in that
+   file can execute R code via an R console in the background?
+   #+begin_quote
+   Add this at the top:
+
+   =#+PROPERTY: header-args:R :session **R** :results output=
+
+   Either run it with =C-c C-c= ("Local setup refreshed"), or re-open
+   the file (it is read whenever the file is being opened).
+   #+end_quote
+
+9. When you create an Org-mode file in your home directory (=~/=) and
+   run an R code block inside it - which directory is R using?
+   #+begin_quote
+   R is looking at the location where it was first started or to which
+   it was set using the =setwd= function. If there is no other R
+   session, then R is using =~/= because that's where the file is
+   located.
+   #+end_quote
+
+** Review questions (DataCamp - Data Collection and Storage)
+
+1) What's an API?
+   #+begin_quote
+   API stands for Application Programming Interface, a protocol or set
+   of instructions to request data over the Internet. If an
+   organization does not offer an API, you cannot (legally) access its
+   applications, e.g. databases.
+   #+end_quote
+
+2) Does X (formerly Twitter) have a public API and what's it good for?
+   #+begin_quote
+   Free access to the X API is limited since April 2023 but developers
+   can still access it if they're on an X subscription plan.
+
+   The API allows access to various X features such as: reading and
+   posting tweets (via bot apps), tracking/following users, sending
+   direct messages, etc. See https://developer.x.com/en
+
+   X API: could be a project!
+   #+end_quote
+
+3) What could you do with the data obtained from X?
+   #+begin_quote
+   - Perform a "sentiment analysis" on the text of each tweet,
+     e.g. automatically check if a tweet is positive or negative.
+   - Count how many times a word, or a hashtag (=#birkenkrahe=) appears
+     each week.
+   - Combine sentiment analysis and hashtag counts to check if
+     positive tweets are correlated with more customers or more views.
+   #+end_quote
+
+4) What are the main categories of data and how do they differ from one another?
+   #+begin_quote
+   The two main types of data are **quantitative** and
+   **qualitative**. Quantitative data deals with numbers and can be
+   measured, while qualitative data deals with descriptions and can be
+   observed but not measured (directly).
+
+   Either of these data types can be structured/stored as image, text,
+   geospatial, network data. Example: text data are qualitative
+   (content) and have to be converted to quantitative data (tokens)
+   for analysis and processing.
+   #+end_quote
+
+5) What do you need to consider when storing data?
+   #+begin_quote
+   - Location (e.g. parallel storage solutions or the cloud, or locally)
+   - Data category (e.g. unstructured or tabular)
+   - Retrieval (e.g. NoSQL for document (collection-based), or SQL for
+     relational (table-based) databases.
+   #+end_quote
+
+6) What's a query language? What's an example?
+   #+begin_quote
+   A language to articulate data queries, for example querying a table
+   in a relational database management system using SQL, as in the
+   query: =SELECT customer_name FROM customers;=
+   #+end_quote
+
+7) What are the top cloud providers in the world?
+   #+begin_quote
+   - Amazon with Amazon Web Services (AWS)
+   - Microsoft with Azure
+   - Alphabet with Google Cloud (as in "Google Cloud Shell")
+   #+end_quote
+
+8) What does it mean to "scale data storage"?
+   #+begin_quote
+   When collecting large amounts of different types data from multiple
+   sources, the "scaling" question is "how much, what type, and how
+   fast"? If an application (e.g. for storage) scales, it can store
+   small and (arbitrarily) large data volumes. To scale, technology
+   either has to be invented or adapted - with computers, scale always
+   comes at a price.
+   #+end_quote
+
+9) What's a "data pipeline"?
+   #+begin_quote
+   A data pipeline is a workflow, a prescribed series of steps or
+   stages that is used to retrieve, load, and store data, to better
+   control individual steps and (ideally) automate the entire process.
+
+   The term "pipeline" is used whenever segments are combined so that
+   the output of the previous segment is the input of the next,
+   e.g. in the following shell command, which pipes the string into a
+   file and then counts the characters of the string:
+   #+end_quote
+   Example in a =bash= code block:
+   #+begin_src bash :results output 
+     echo "Hello" | tee hello.txt |  wc -c
+     cat hello.txt
+   #+end_src
+
+   #+RESULTS:
+   : 6
+   : Hello
+
+10) What's "ETL" and how is it used (think of an example)?
+    #+begin_quote
+    - ETL stands for the "Extract", "Transform", "Load" data pipeline.
+    - Example: autonomous vehicle operation:
+      1. Retrieve real-time traffic data (e.g. "rain", "stop sign")
+      2. Transform retrieved data for analysis (e.g. create table)
+      3. Load transformed data into container (e.g. SQLite database)
+    - When an ETL pipeline is well set up, it can be automated. In the
+      case of automated vehicles, operation otherwise wouldn't be
+      possible.
+    #+end_quote
+
+
+* Week 4 - Introduction to data science
+** IN PROGRESS Introduction to data science (lecture)
+
+- Data science popularity
+- Data science definitions
+- Data science skill sets
+- Data science jobs
+- Data science processes
 
 
